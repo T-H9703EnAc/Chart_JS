@@ -16,7 +16,7 @@ $(document).ready(function () {
  * 最初に行う処理
  */
 CustomLegendChartDisplay.prototype.init = function () {
-  let panel = this;
+  const panel = this;
   // 凡例を作成
   panel.createLegend();
 

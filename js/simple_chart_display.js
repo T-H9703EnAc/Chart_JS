@@ -16,7 +16,7 @@ $(document).ready(function () {
  * 最初に行う処理
  */
 SimpleChartDisplay.prototype.init = function () {
-  let panel = this;
+  const panel = this;
   $("#displayBtn").click(function () {
     panel.chartDisplay();
   });

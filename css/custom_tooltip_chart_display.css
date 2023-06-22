@@ -1,0 +1,5 @@
+#customTooltip {
+  /* positionの指定がないとツールチップのCSSの設定が機能しなくなる */
+  position: absolute;
+  display: none;
+}
