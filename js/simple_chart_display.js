@@ -26,6 +26,10 @@ SimpleChartDisplay.prototype.init = function () {
  * チャート表示処理
  */
 SimpleChartDisplay.prototype.chartDisplay = function () {
+  // 既存のチャートがあれば破棄
+  if (this.chart) {
+    this.chart.destroy();
+  }
   // canvasから2D描画コンテキストを取得
   const ctx = $("#chart")[0].getContext("2d");
   // チャートを描画する。
